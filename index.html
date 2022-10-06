@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .MOVING{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 0px;
+            background-image: url("AK.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .SLIDING{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 27px;
+            left: 200px;
+            background-image: url("BULLET.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation-duration: 100ms;
+            animation-name: slide;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slide {
+            from{
+                left: 10;
+            }
+            to{
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "MOVING"></div>
+        <div class = "SLIDING"></div>
+</body>
+</html>
